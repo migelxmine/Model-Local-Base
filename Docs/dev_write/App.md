@@ -54,3 +54,4 @@ Integração com agentes externos.
  * Codex
    > Funcionamento: Abre uma página de autenticação no navegador para efetuar login direto na conta da OpenAI.
    
+2 segunda camada. ao abrir a app (lunch app) viras um ecra cheio de funcjonalidades e o ecra dividido em 3 (especificamente 4/4, 1/4 esquerdo do ecrã serve para navegares por chast e cistumizares o llm, tem modelo em  demo/contents/
