@@ -54,18 +54,51 @@ Integração com agentes externos.
  * Codex
    > Funcionamento: Abre uma página de autenticação no navegador para efetuar login direto na conta da OpenAI.
    
-2 segunda camada. ao abrir a app (lunch app) viras um ecra cheio de funcjonalidades e o ecra dividido em 3 (especificamente 4/4, 1/4 esquerdo do ecrã serve para navegares por chast e cistumizares o llm, tem modelo em  demo/contents/branched_menu, q esta dividido em 2/3 (se aplicavel) categorias sendo:
 
-- Personalização
-  - Rails (aqui basicamente é uma (ou varias) instruvoes q o llm lê obrigatpriamente sempre se ligado antes de pensar (tens de drag and drop um .zip q contenga um (INSTRUCTIONS.md) debtro)
-  - Language (permite te mudares a lingua da app (frances, pt pt, ingles, chines e espanhol)
-  - Connectors (Aqui por enquanto Github e Gmail)
-  - Temperatura (Aqui tens varios sliders (demo/contents/elastic_slider) com temperatura 
-- Codex
-  - Chats
-- Chats
-  
-2/4 do ecra estao no meio q é o painel do respectivo canal (canel sao os coisos dentro das categorias), ao estar um chat a barra de prompt vem com outras coisas em cima (effort se aplicavel e modular (modular no sentidp de, se há modelos on off nao faz sentido estar com dedativado baixo medio alto, e tmb como no chat de agents ao usar o codex baixo medio alto ja q é Light Medium Hight Extra high Ultra max) em chat normal ao lado sessa barrinha uma cena q abre uma lista de modleos (demo/contents/glide_select) com todos os modelos instalados (se aplicavel o da vloud se guardasses a apj o modleo e etc) ja em agentes essa lista, os llm muda para os ll. disponivel nesse cli (no caso do vodez aparece 5.6 luna 5.6 terra 5.6 sol 6 astra etc todos os q sao detectados) onde ele escreve sempre q pensa aparece isto (demo/contents/lattice_loader, com um mod q ao completar faz um padrao random nao fixo)
 
-1/4 do ecra direito é thinking orb (demo/contents/thinking_orb) q reage e interage oq o llm esta a fazer
-
+2. Segunda Camada (Launch App)
+Ao abrir a aplicação (Launch App), o ecrã surge estruturado em 3 colunas verticais (proporção 1/4 - 2/4 - 1/4), repletas de funcionalidades.
+A. Painel Esquerdo (1/4 do Ecrã) — Navegação e Customização
+Serve para navegar entre conversas e personalizar as definições do LLM.
+ * Componente base: demo/contents/branched_menu
+ * Categorias:
+   
+1. Personalização
+ * Rails: Instruções de leitura obrigatória pelo LLM antes de gerar respostas.
+   > Ativação: Funciona via drag and drop de um ficheiro .zip contendo um INSTRUCTIONS.md no interior.
+   
+ * Language: Mudança global de idioma da aplicação.
+   * Idiomas disponíveis: Francês, Português (PT-PT), Inglês, Chinês e Espanhol.
+     
+ * Connectors: Integrações de dados e serviços externos.
+   * Suportados atualmente: GitHub e Gmail.
+     
+ * Temperatura: Ajuste fino dos hiperparâmetros de geração através de sliders elásticos.
+   * Componente: demo/contents/elastic_slider
+   * Controlos: Temperature, Top-K, Top-P e Repeat Penalty.
+     
+2. Codex
+ * Gestão e histórico de chats específicos do agente Codex.
+3. Chats
+ * Gestão e histórico de conversas convencionais.
+B. Painel Central (2/4 do Ecrã) — Canal e Área de Trabalho
+Painel dinâmico onde é exibido o conteúdo do canal ou conversa selecionada.
+Barra de Prompt e Controlos Superiores
+ * Seletor de Nível de Esforço (Effort):
+   * Adaptável/Modular: Altera-se consoante as capacidades do modelo ativo.
+   * Chat com Agentes (Codex): Níveis avançados — Light, Medium, High, Extra High e Ultra Max.
+   * Modelos sem suporte: O painel esconde/desativa automaticamente os controlos irrelevantes.
+ * Seletor de Modelos (Glide Select):
+   * Componente: demo/contents/glide_select
+   * Modo Chat Normal: Lista todos os modelos instalados localmente e/ou modelos Cloud configurados via API Key.
+   * Modo Agentes / Codex: Deteta automaticamente os modelos disponíveis na CLI do agente (ex: 5.6 luna, 5.6 terra, 5.6 sol, 6 astra, etc.).
+Indicador de Processamento
+ * Lattice Loader:
+   * Componente: demo/contents/lattice_loader
+   * Comportamento: É exibido enquanto o modelo está a processar/pensar.
+   * Animação de Conclusão: Gera um padrão gráfico aleatório e dinâmico no final de cada resposta.
+   * 
+C. Painel Direito (1/4 do Ecrã) — Thinking Orb
+Elemento visual interativo e reativo.
+ * Componente: demo/contents/thinking_orb
+ * Função: Reage e interage em tempo real com o estado de raciocínio e ações do LLM.
