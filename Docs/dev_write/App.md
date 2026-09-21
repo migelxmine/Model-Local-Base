@@ -1,43 +1,56 @@
-# Atao, o MLB esta dividido em duas grandes partes
+# Estrutura do MLB
 
-### Primeira camada
+O MLB está dividido em duas grandes partes.
 
- Esta, é o ecrã onde vês ao iniciar a aplicaçao, vês dois elementos visuais:
+1. Primeira Camada
+   
+Corresponde ao ecrã exibido ao iniciar a aplicação. É constituído por dois elementos visuais principais, com destaque para a Roda.
 
-  A roda (construção da propria em **demo/contents/wheel**)
-    Que divide se em varias gavetas tmb (vou ja fazer todas e assinar qu dentro de qual:
-     A principal tem:
-      - Lunch App
-      - LLM Instalation
-       - Qwen
-        - Qwen3-235B-A22B
-        - Qwen3-32B
-        - Qwen3-14B
-        - Qwen3-8B
-        - Qwen3-4B
-        - Qwen3-1.7B
-        - Qwen3-0.6B
-       - Deepseak
-        - Deepseek-r1:1.5b
-        - Deepseek-r1:7b
-        - Deepseek-r1:8b
-        - Deepseek-r1:14b
-        - Deepseek-r1:32b
-        - Deepseek-r1:70b
-        - Deepseek-r1:671b
-        - Deepseek-v4-flash
-        - Deepseek-v3
-        - Deepseek-coder-v2
-        - Deepseek-coder
-       - Kimi
-        - Kimi-k2.6
-        - Kimi-k2.7-code
-      (NOTA: A partir da aplicação consegues transferir todos os modelos a cima para usalos localmente,
-      notas de detalhes da instalação deve mostrar claramente tamanho do disco ram e gpu recomendada)
-      - Use API key
-      (NOTA: Aqui ele apenas pede api key nome do modelo e link do site da fornecedora e botao pa guardar
-      super simples e facil)
-      - Connect Agents
-       - Codex
-       (NOTA: Aqui basta abrir uma pagina de login no browser para logar com a conta da open ia)
-       
+A Roda
+ * Localização no código: demo/contents/wheel
+ * Divisão de gavetas/menus:
+ * 
+A. Launch App
+Inicialização rápida da aplicação principal.
+
+B. LLM Installation
+Permite descarregar e gerir modelos de linguagem para utilização 100% local.
+> Requisitos da Interface: Cada modelo deve apresentar claramente os requisitos de instalação: espaço em disco, memória RAM e GPU recomendada.
+> 
+ * Qwen
+   * Qwen3-235B-A22B
+   * Qwen3-32B
+   * Qwen3-14B
+   * Qwen3-8B
+   * Qwen3-4B
+   * Qwen3-1.7B
+   * Qwen3-0.6B
+ * DeepSeek
+   * Deepseek-r1:1.5b
+   * Deepseek-r1:7b
+   * Deepseek-r1:8b
+   * Deepseek-r1:14b
+   * Deepseek-r1:32b
+   * Deepseek-r1:70b
+   * Deepseek-r1:671b
+   * Deepseek-v4-flash
+   * Deepseek-v3
+   * Deepseek-coder-v2
+   * Deepseek-coder
+ * Kimi
+   * Kimi-k2.6
+   * Kimi-k2.7-code
+   * 
+C. Use API Key
+Interface simples e direta para integração via API externa.
+ * Campos do formulário:
+   * API Key
+   * Nome do Modelo
+   * URL / Link da Fornecedora
+ * Ação: Botão para guardar credenciais.
+   
+D. Connect Agents
+Integração com agentes externos.
+ * Codex
+   > Funcionamento: Abre uma página de autenticação no navegador para efetuar login direto na conta da OpenAI.
+   
