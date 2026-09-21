@@ -56,8 +56,9 @@ Integração com agentes externos.
    
 
 
-2. Segunda Camada (Launch App)
-Ao abrir a aplicação (Launch App), o ecrã surge estruturado em 3 colunas verticais (proporção 1/4 - 2/4 - 1/4), repletas de funcionalidades.
+# 2. Segunda Camada (Launch App)
+   
+Ao abrir a aplicação (Launch App),o ecrã surge estruturado em 3 colunas verticais (proporção 1/4 - 2/4 - 1/4), repletas de funcionalidades.
 A. Painel Esquerdo (1/4 do Ecrã) — Navegação e Customização
 Serve para navegar entre conversas e personalizar as definições do LLM.
  * Componente base: demo/contents/branched_menu
