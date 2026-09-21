@@ -1,0 +1,21 @@
+import LatticeLoader from './LatticeLoader';
+
+<LatticeLoader
+  status={isDone ? 'done' : 'working'}
+  label="Thinking"
+  doneLabel="Done in"
+  errorLabel="Failed after"
+  pattern="orbit"
+  grid={3}
+  shape="square"
+  doneColor="#22c55e"
+  errorColor="#ef4444"
+  cellSize={4}
+  gap={1}
+  fontSize={14}
+  step={90}
+  idleOpacity={0.15}
+  glow
+  glowColor=""
+  showTimer
+/>
