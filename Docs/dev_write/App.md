@@ -54,4 +54,18 @@ Integração com agentes externos.
  * Codex
    > Funcionamento: Abre uma página de autenticação no navegador para efetuar login direto na conta da OpenAI.
    
-2 segunda camada. ao abrir a app (lunch app) viras um ecra cheio de funcjonalidades e o ecra dividido em 3 (especificamente 4/4, 1/4 esquerdo do ecrã serve para navegares por chast e cistumizares o llm, tem modelo em  demo/contents/
+2 segunda camada. ao abrir a app (lunch app) viras um ecra cheio de funcjonalidades e o ecra dividido em 3 (especificamente 4/4, 1/4 esquerdo do ecrã serve para navegares por chast e cistumizares o llm, tem modelo em  demo/contents/branched_menu, q esta dividido em 2/3 (se aplicavel) categorias sendo:
+
+- Personalização
+  - Rails (aqui basicamente é uma (ou varias) instruvoes q o llm lê obrigatpriamente sempre se ligado antes de pensar (tens de drag and drop um .zip q contenga um (INSTRUCTIONS.md) debtro)
+  - Language (permite te mudares a lingua da app (frances, pt pt, ingles, chines e espanhol)
+  - Connectors (Aqui por enquanto Github e Gmail)
+  - Temperatura (Aqui tens varios sliders (demo/contents/elastic_slider) com temperatura 
+- Codex
+  - Chats
+- Chats
+  
+2/4 do ecra estao no meio q é o painel do respectivo canal (canel sao os coisos dentro das categorias), ao estar um chat a barra de prompt vem com outras coisas em cima (effort se aplicavel e modular (modular no sentidp de, se há modelos on off nao faz sentido estar com dedativado baixo medio alto, e tmb como no chat de agents ao usar o codex baixo medio alto ja q é Light Medium Hight Extra high Ultra max) em chat normal ao lado sessa barrinha uma cena q abre uma lista de modleos (demo/contents/glide_select) com todos os modelos instalados (se aplicavel o da vloud se guardasses a apj o modleo e etc) ja em agentes essa lista, os llm muda para os ll. disponivel nesse cli (no caso do vodez aparece 5.6 luna 5.6 terra 5.6 sol 6 astra etc todos os q sao detectados) onde ele escreve sempre q pensa aparece isto (demo/contents/lattice_loader, com um mod q ao completar faz um padrao random nao fixo)
+
+1/4 do ecra direito é thinking orb (demo/contents/thinking_orb) q reage e interage oq o llm esta a fazer
+
