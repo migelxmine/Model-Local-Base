@@ -9,7 +9,7 @@ Corresponde ao ecrã exibido ao iniciar a aplicação. É constituído por dois 
 A Roda
  * Localização no código: demo/contents/wheel
  * Divisão de gavetas/menus:
- * 
+
 A. Launch App
 Inicialização rápida da aplicação principal.
 
